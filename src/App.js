@@ -1,24 +1,42 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import ReviewBox from './ReviewBox';
 
 function App() {
+//   const data = {
+//     stephen: {
+//       name: "stephen",
+//       address: "owerri",
+//       email: "test@test.com"
+//     },
+//     val: {
+//       name: "val",
+//       address: "enugu",
+//       email: "val@test.com"
+//     }  
+//  }
+  // const data = {
+  //   name: "stephen",
+  //   address: "owerri",
+  //   email: "test@test.com"
+  // }
+  const data = [{
+      name: "stephen",
+      address: "owerri",
+      email: "test@test.com"
+    },
+    {
+        name: "val",
+        address: "enugu",
+        email: "val@test.com"
+      }
+  ]
+  // const data = ["India", "Italy"]
+  // const data = "Italy"
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+          <ReviewBox items= {data}/>
     </div>
   );
 }
